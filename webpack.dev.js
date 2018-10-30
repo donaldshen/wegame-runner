@@ -1,8 +1,8 @@
-import merge from 'webpack-merge'
-import common from './webpack.common'
-import webpack from 'webpack'
+const merge = require('webpack-merge')
+const common = require('./webpack.common')
+const webpack = require('webpack')
 
-export default merge(common, {
+module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
   // @ts-ignore

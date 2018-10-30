@@ -1,8 +1,8 @@
-import path from 'path'
-import CleanWebpackPlugin from 'clean-webpack-plugin'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+const path = require('path')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-export default {
+module.exports = {
   entry: {
     app: './src/index.ts',
   },

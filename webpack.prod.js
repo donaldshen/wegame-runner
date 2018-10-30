@@ -1,9 +1,9 @@
-import merge from 'webpack-merge'
-import common from './webpack.common'
-// import UglifyJSPlugin from 'uglifyjs-webpack-plugin'
-import webpack from 'webpack'
+const merge = require('webpack-merge')
+const common = require('./webpack.common')
+// const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const webpack = require('webpack')
 
-export default merge(common, {
+module.exports = merge(common, {
   mode: 'production',
   // devtool: 'source-map',
   plugins: [
