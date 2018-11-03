@@ -30,3 +30,5 @@ rules:
         - instance-method
       alphabetize: false # 还是按逻辑组织order更好
   no-unused-expression: [true, allow-new]
+  whitespace:
+    - true
